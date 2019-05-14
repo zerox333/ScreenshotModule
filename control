@@ -1,0 +1,9 @@
+Package: com.zerox.screenshotmodule
+Name: Screenshot Module
+Depends: mobilesubstrate, com.opa334.ccsupport
+Version: 1.0
+Architecture: iphoneos-arm
+Description: An awesome Control Center module!
+Maintainer: ZeroX
+Author: ZeroX
+Section: Control Center (Modules)
