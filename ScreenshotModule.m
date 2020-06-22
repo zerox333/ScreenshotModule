@@ -18,7 +18,7 @@
 
 @interface SpringBoard : UIApplication
 
-- (void)takeScreenshotAndEdit:(BOOL)edit;
+- (void)_takeScreenshotAndEdit:(BOOL)edit;
 
 @end
 
@@ -99,7 +99,7 @@
 	[[NSClassFromString(@"SBControlCenterController") sharedInstance] dismissAnimated:YES];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         // [[[NSClassFromString(@"SBScreenshotManager") alloc] initWithDataSource:[NSClassFromString(@"SBScreenshotManagerDataSource") new]] saveScreenshots];
-        [(SpringBoard *)[NSClassFromString(@"SpringBoard") sharedApplication] takeScreenshotAndEdit:NO];
+        [(SpringBoard *)[NSClassFromString(@"SpringBoard") sharedApplication] _takeScreenshotAndEdit:NO];
     });
 }
 
